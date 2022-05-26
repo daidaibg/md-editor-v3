@@ -10,7 +10,7 @@
 - **默认值**：`''`
 - **说明**：编辑的内容。
 
-### 🛍 theme
+### 🛍 theme 编辑器主题
 
 - **类型**：`'light' | 'dark'`
 - **默认值**：`'light'`
@@ -20,7 +20,7 @@
 <Editor theme="dark" />
 ```
 
-### 🎀 editorClass
+### 🎀 editorClass 编辑器`class`
 
 - **类型**：`String`
 - **默认值**：`''`
@@ -38,37 +38,37 @@
 - **默认值**：[highlight.js@11.2.0](https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js)
 - **说明**：highlightJs 链接。
 
-### 🧸 highlightCss
+### 🧸 highlightCss 预览高亮代码样式
 
 - **类型**：`String`
 - **默认值**：[atom-one-dark@11.2.0](https://cdn.jsdelivr.net/npm/highlight.js@11.2.0/styles/atom-one-dark.css)
 - **说明**：预览高亮代码样式。
 
-### 🤏🏼 historyLength
+### 🤏🏼 historyLength 最大记录操作数
 
 - **类型**：`Number`
 - **默认值**：`10`
 - **说明**：最大记录操作数（太大会占用内存）。
 
-### 💻 pageFullScreen
+### 💻 pageFullScreen 页面内全屏
 
 - **类型**：`Boolean`
 - **默认值**：`false`
 - **说明**：页面内全屏。
 
-### 📱 preview
-
+### 📱 preview 是否显示预览
+ 
 - **类型**：`Boolean`
 - **默认值**：`true`
 - **说明**：是否显示预览。
 
-### 📀 htmlPreview
+### 📀 htmlPreview 是否显示 html 预览
 
 - **类型**：`Boolean`
 - **默认值**：`false`
 - **说明**：是否显示 html 预览。
 
-### 📺 previewOnly
+### 📺 previewOnly 仅预览模式
 
 - **类型**：`Boolean`
 - **默认值**：`false`
@@ -80,7 +80,7 @@
 - **默认值**：`'zh-CN'`
 - **说明**：内置中英文(`'zh-CN'`,`'en-US'`)，可自行扩展其他语言，同时可覆盖内置的中英文。
 
-### 🔤 languageUserDefined
+### 🔤 languageUserDefined 扩展语言
 
 - **类型**：`Object`
 - **默认值**：`{key: StaticTextDefaultValue}`
@@ -183,7 +183,7 @@ export interface StaticTextDefaultValue {
 }
 ```
 
-### 🧱 toolbars
+### 🧱 toolbars 工具栏
 
 - **类型**：`Array`
 - **默认值**：`[all]`
@@ -252,7 +252,7 @@ export interface StaticTextDefaultValue {
   '源码地址';
 ```
 
-### 🧱 toolbarsExclude
+### 🧱 toolbarsExclude 选择性不展示工具栏
 
 - **类型**：`Array`
 - **默认值**：`[]`
@@ -276,13 +276,13 @@ export interface StaticTextDefaultValue {
 - **默认值**：[parser-markdown@2.4.0](https://cdn.jsdelivr.net/npm/prettier@2.4.0/parser-markdown.js)
 - **说明**：
 
-### ✂️ Cropper
+### ✂️ Cropper 图片裁剪
 
 - **类型**：`Object`
 - **默认值**：`undefined`
 - **说明**：图片裁剪实例。
 
-### ✂️ cropperCss
+### ✂️ cropperCss 裁剪 css
 
 - **类型**：`String`
 - **默认值**：[cropper.min.css@1.5.12](https://cdn.jsdelivr.net/npm/cropperjs@1.5.12/dist/cropper.min.css)
@@ -294,7 +294,7 @@ export interface StaticTextDefaultValue {
 - **默认值**：[cropper.min.js@1.5.12](https://cdn.jsdelivr.net/npm/cropperjs@1.5.12/dist/cropper.min.js)
 - **说明**：裁剪扩展库 js。
 
-### 👻 iconfontJs
+### 👻 iconfontJs 矢量图标
 
 - **类型**：`String`
 - **默认值**：[iconfont](//at.alicdn.com/t/font_2605852_ihjkm7wo1y.js)
@@ -312,7 +312,7 @@ export interface StaticTextDefaultValue {
 - **默认值**：`2`
 - **说明**：编辑器一个 TAB 键等于空格数。
 
-### 🔢 showCodeRowNumber
+### 🔢 showCodeRowNumber 代码块是否显示行号
 
 - **类型**：`Boolean`
 - **默认值**：`false`
@@ -679,12 +679,12 @@ async onUploadImg(files: Array<File>, callback: (urls: string[]) => void) {
 }
 ```
 
-### ☎️ onHtmlChanged
+### ☎️ onHtmlChanged html 变化回调
 
 - **类型**：`(h: string) => void`
 - **说明**：html 变化回调事件，用于获取预览 html 代码。
 
-### 🗒 onGetCatalog
+### 🗒 onGetCatalog 获取目录
 
 - **类型**：`(list: HeadList[]) => void`
 - **说明**：动态获取`markdown`目录。
